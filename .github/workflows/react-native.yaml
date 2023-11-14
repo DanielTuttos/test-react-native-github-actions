@@ -15,9 +15,9 @@ jobs:
             java --version
             node --version
             npm --version
-            gradlew --version
             docker
       - name: build
         run: |
             cd android
+            chmod + x gradlew
             ./gradlew build
